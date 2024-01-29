@@ -1,0 +1,213 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-main-bg: #000;
+}
+
+body {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* sidebar */
+
+#sidebar {
+    display: none;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.w-20 {
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.w-21 {
+    min-width: 55px;
+    max-width: 55px;
+}
+
+.vhl-100 {
+    height: 737.5px;
+}
+
+#all-list {
+    display: none;
+    opacity: 1 !important;
+    height: 100vh !important;
+}
+
+#list {
+    display: none;
+    opacity: 0;
+}
+
+#close {
+    display: none;
+}
+
+#show-menu {
+    display: block;
+}
+
+.btn-a {
+    padding-top: 30px;
+    opacity: 0;
+}
+
+
+/* search */
+
+#search {
+    display: none;
+}
+
+#search .form-control::placeholder {
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+
+/* categories and meals */
+
+#meals {
+    display: none;
+}
+
+#categories {
+    display: none;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.image .brief {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    top: 100%;
+    transition: 0.5s top;
+    cursor: pointer;
+}
+
+.image:hover .brief {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    top: 0;
+    transition: 0.5s top;
+    cursor: pointer;
+}
+
+
+/* details */
+
+#details {
+    display: none;
+}
+
+
+/* area */
+
+#areas {
+    display: none;
+}
+
+
+/* ingredients */
+
+#ingredients {
+    display: none;
+}
+
+
+/* contact */
+
+#contact {
+    display: none;
+}
+
+.pc-2 {
+    padding: 10.5px;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-45 {
+    width: 48%;
+}
+
+.email {
+    display: none;
+}
+
+.phone {
+    display: none;
+}
+
+.age {
+    display: none;
+}
+
+.password {
+    display: none;
+}
+
+.repassword {
+    display: none;
+}
+
+.name {
+    display: none;
+}
+
+
+/* load */
+
+.head-loading {
+    position: relative;
+    display: none;
+    height: 100vh;
+}
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
